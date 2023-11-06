@@ -1,0 +1,19 @@
+spring:
+  flyway:
+    locations: classpath:db/migration
+    schemas: public
+    baseline-on-migrate: true
+  jpa:
+    show-sql: true
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://suleiman.db.elephantsql.com/msvytect
+    username: msvytect
+    password: l7PEnUxexJ5rP9MqU5uXbWotEtYGtvzH
